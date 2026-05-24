@@ -24,11 +24,11 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`} id="main-nav">
-      <Link to="/" className="nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <Link to="/" className="nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         <img 
           src="/logo.png" 
           alt="Mactee Homes Logo" 
-          className="nav-logo"
+          style={{ height: '40px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} 
         />
         <span>Mactee Homes</span>
       </Link>

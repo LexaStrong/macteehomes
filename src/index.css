@@ -58,11 +58,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
   color: #fff;
 }
 .nav-brand span { color: var(--accent); }
-.nav-logo {
-  height: 56px;
-  width: auto;
-  object-fit: contain;
-}
 .nav-links { display: flex; gap: 32px; align-items: center; }
 .nav-links a {
   color: rgba(255,255,255,0.8); font-size: 0.9rem; font-weight: 500;
@@ -522,7 +517,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
   }
   .mobile-toggle { display: flex; }
   .nav-cta { margin-top: 8px; text-align: center; display: block; }
-  .nav-logo { height: 48px; }
   .hero {
     min-height: 70vh !important;
     padding: 100px 5% 50px !important;
@@ -558,6 +552,9 @@ button { cursor: pointer; border: none; font-family: inherit; }
   }
   .form-group-full {
     grid-column: span 1 !important;
+  }
+  .nav-brand img {
+    height: 58px !important;
   }
   /* Modal mobile */
   .modal-backdrop { padding: 0; align-items: flex-end; }
