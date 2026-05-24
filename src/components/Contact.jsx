@@ -1,9 +1,15 @@
-import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { MapPin, Phone, Mail, MessageCircle, ArrowLeft } from 'lucide-react'
 
 export default function Contact() {
   return (
     <main>
       <section className="contact-hero">
+        <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'left', marginBottom: '20px' }}>
+          <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', transition: 'var(--transition)', fontWeight: 500 }} onMouseOver={e => e.currentTarget.style.color = '#fff'} onMouseOut={e => e.currentTarget.style.color = 'rgba(255,255,255,0.7)'}>
+            <ArrowLeft size={16} /> Back to Home
+          </Link>
+        </div>
         <h1>Get In Touch</h1>
         <p>Ready to find your dream home? Reach out to us and let's make it happen.</p>
       </section>

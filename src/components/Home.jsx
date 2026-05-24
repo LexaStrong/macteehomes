@@ -71,6 +71,14 @@ export default function Home() {
           <p className="hero-subtitle">
             Acquire the best properties in Ghana. Luxury & fully furnished apartments at affordable prices. Your comfort, our priority.
           </p>
+          <div className="hero-ctas">
+            <a href="#featured" className="hero-cta-primary">
+              View More
+            </a>
+            <a href="/contact" className="hero-cta-secondary">
+              Contact Us
+            </a>
+          </div>
           <div className="search-panel" id="search-panel">
             <div className="search-field">
               <label htmlFor="search-location">Location</label>

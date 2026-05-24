@@ -1,9 +1,15 @@
-import { Shield, Heart, Eye, Users } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Shield, Heart, Eye, Users, ArrowLeft } from 'lucide-react'
 
 export default function About() {
   return (
     <main>
       <section className="about-hero">
+        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'left', marginBottom: '20px' }}>
+          <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', transition: 'var(--transition)', fontWeight: 500 }} onMouseOver={e => e.currentTarget.style.color = '#fff'} onMouseOut={e => e.currentTarget.style.color = 'rgba(255,255,255,0.7)'}>
+            <ArrowLeft size={16} /> Back to Home
+          </Link>
+        </div>
         <h1>About Mactee Homes</h1>
         <p>Your trusted partner for luxury, fully furnished properties across Ghana. Your comfort, our priority.</p>
       </section>

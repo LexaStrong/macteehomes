@@ -163,9 +163,9 @@ export default function Admin() {
             <h2 style={{ fontSize: '1.8rem', color: 'var(--navy)', marginBottom: '24px' }}>
               {editId ? 'Edit Property Listing' : 'Create New Listing'}
             </h2>
-            <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px' }}>
+            <form onSubmit={handleSubmit} className="admin-form-grid">
               
-              <div className="form-group" style={{ gridColumn: 'span 2' }}>
+              <div className="form-group form-group-full">
                 <label style={{ display: 'block', fontWeight: 600, marginBottom: '6px', color: 'var(--navy)', fontSize: '0.9rem' }}>Property Name</label>
                 <input 
                   type="text" required placeholder="e.g. Ocean Breeze Villa"
@@ -232,7 +232,7 @@ export default function Admin() {
                 />
               </div>
 
-              <div className="form-group" style={{ gridColumn: 'span 2' }}>
+              <div className="form-group form-group-full">
                 <label style={{ display: 'block', fontWeight: 600, marginBottom: '6px', color: 'var(--navy)', fontSize: '0.9rem' }}>Image URL</label>
                 <input 
                   type="url" placeholder="e.g. https://images.unsplash.com/photo-..."
@@ -244,7 +244,7 @@ export default function Admin() {
                 </span>
               </div>
 
-              <div style={{ gridColumn: 'span 2', display: 'flex', gap: '12px', marginTop: '20px' }}>
+              <div className="form-group-full" style={{ display: 'flex', gap: '12px', marginTop: '20px' }}>
                 <button 
                   type="submit" 
                   style={{ 
