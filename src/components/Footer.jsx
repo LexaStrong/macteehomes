@@ -19,7 +19,7 @@ export default function Footer() {
             Your comfort, our priority.
           </p>
           <div className="footer-socials">
-            <a href="https://wa.me/+2330505814053" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="WhatsApp">
+            <a href="https://wa.me/233505814053" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="WhatsApp">
               <Phone size={18} />
             </a>
             <a href="https://www.facebook.com/Bismarck.Tee?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="Facebook">

@@ -24,11 +24,11 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`} id="main-nav">
-      <Link to="/" className="nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+      <Link to="/" className="nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <img 
           src="/logo.png" 
           alt="Mactee Homes Logo" 
-          style={{ height: '40px', width: 'auto', objectFit: 'contain', borderRadius: '4px' }} 
+          className="nav-logo"
         />
         <span>Mactee Homes</span>
       </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
           </Link>
         ))}
         <a
-          href="https://wa.me/+2330505814053"
+          href="https://wa.me/233505814053"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-cta"
